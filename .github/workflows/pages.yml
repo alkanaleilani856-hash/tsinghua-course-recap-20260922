@@ -26,7 +26,7 @@ jobs:
       - name: Prepare static output
         run: |
           mkdir dist
-          cp index.html dist/
+          cp index.html reference.html dist/
           touch dist/.nojekyll
       - uses: actions/upload-pages-artifact@v3
         with:
