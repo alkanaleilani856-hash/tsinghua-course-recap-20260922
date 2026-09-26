@@ -27,6 +27,8 @@ jobs:
         run: |
           mkdir dist
           cp index.html reference.html dist/
+          mkdir -p dist/assets
+          cp assets/course-poster.jpg dist/assets/
           touch dist/.nojekyll
       - uses: actions/upload-pages-artifact@v3
         with:
